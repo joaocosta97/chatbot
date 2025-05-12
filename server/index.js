@@ -108,13 +108,18 @@ Comunica apenas com base no conteúdo acima. Não inventes informações. Se nã
 app.post('/mensagem', async (req, res) => {
   const { mensagem, historico } = req.body;
 
-  try {
-    const mensagens = [
-      { role: 'system', content: systemPromptBase },
-      ...(historico || []).slice(-10),
-      { role: 'user', content: mensagem }
-    ];
+  // Segurança extra
+  if (!mensagem || typeof mensagem !== 'string') {
+    return res.status(400).json({ resposta: 'Mensagem inválida.' });
+  }
 
+  const mensagens = [
+    { role: 'system', content: systemPromptBase },
+    ...(Array.isArray(historico) ? historico.filter(m => typeof m.content === 'string') : []).slice(-10),
+    { role: 'user', content: mensagem }
+  ];
+
+  try {
     const completion = await openai.chat.completions.create({
       model: 'gpt-3.5-turbo',
       messages: mensagens
@@ -128,6 +133,7 @@ app.post('/mensagem', async (req, res) => {
     res.status(500).json({ resposta: 'Erro ao contactar o servidor OpenAI.' });
   }
 });
+
 
 app.post('/marcacao', async (req, res) => {
   const { nome, nascimento, contacto, especialidade } = req.body;
