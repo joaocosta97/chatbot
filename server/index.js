@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import { config } from 'dotenv';
+import dotenv from 'dotenv';
 import fs from 'fs';
 import OpenAI from 'openai';
 import { google } from 'googleapis';
@@ -12,7 +12,9 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-config();
+// Carregar variáveis de ambiente
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -24,6 +26,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../public')));
 
+// Carregar conteúdos dos ficheiros
 const halInfo = fs.readFileSync('./dados/hal_info.txt', 'utf-8');
 const halEspecialidades = fs.readFileSync('./dados/hal_especialidades.txt', 'utf-8');
 const halAcordos = fs.readFileSync('./dados/hal_acordos.txt', 'utf-8');
@@ -119,7 +122,7 @@ app.post('/mensagem', async (req, res) => {
     const resposta = completion.choices[0].message.content;
     await new Promise(resolve => setTimeout(resolve, 1000));
     res.json({ resposta });
-    } catch (err) {
+  } catch (err) {
     console.error(err);
     res.status(500).json({ resposta: 'Erro ao contactar o servidor OpenAI.' });
   }
@@ -138,7 +141,7 @@ app.post('/marcacao', async (req, res) => {
   }
 
   const auth = new google.auth.GoogleAuth({
-    keyFile: path.join(__dirname, '../google-credentials.json'),
+    credentials: JSON.parse(process.env.GOOGLE_CREDENTIALS),
     scopes: ['https://www.googleapis.com/auth/spreadsheets']
   });
 
@@ -154,7 +157,7 @@ app.post('/marcacao', async (req, res) => {
         values: [[new Date().toLocaleString(), nome, nascimento, contacto, especialidade]]
       }
     });
-    
+
     await new Promise(resolve => setTimeout(resolve, 1000));
     res.json({ mensagem: 'Marcação registada com sucesso!' });
 
