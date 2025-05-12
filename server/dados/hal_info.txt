@@ -1,0 +1,212 @@
+# Elaborar TXT c/ informação do HAL:
+# Informações Gerais
+
+#Saudação
+
+
+# Falar com assistente
+    - Encaminhar chamada para +351 253 639 035
+
+# Marcação de consultas
+	- Para marcar uma consulta, pode ligar +351 253 639 035
+    	- Para verificação de horários/datas de consultas/exames, por favor contacte uma assistente.
+
+# P1 / Credencial médico de familia
+	- É possível marcar exames com P1/Credencial de Médico de Familia. Para mais informações, contacte-nos.
+
+
+# Especialidades Médicas, consulta, consultas, marcação de consultas
+O hospital António Lopes  disponibiliza diversas especialidades médicas, incluindo:
+    - Angiologia e Cirurgia Vascular # Médicos Especialistas de Angiologia e Cirurgia Vascular
+    - Cardiologia # Médicos Especialistas de Cardiologia
+    - Cirurgia Geral # Médicos Especialistas de Cirurgia Geral
+    - Cirurgia Plástica, Reconstrutiva e Estética # Médicos Especialistas de Cirurgia Plástica, Reconstrutiva e Estética
+    - Dermatologia # Médicos Especialistas de Dermatologia
+    - Endocrinologia # Médicos Especialistas de Endocrinologia
+    - Fisiatria, Fisiatra, Fisioterapia, Medicina Física e de Reabilitação # Médicos Especialistas de Medicina Fisica e de Reabilitação
+    - Gastrenterologia # Médicos Especialistas de Gastrenterolgia
+    - Ginecologia e Obstetrícia # Médicos Especialistas em Ginecologia e Obstetrícia
+    - Imunoalergologia # Médicos Especialistas em Imunoalergologia
+    - Medicina Dentária # Médicos Especialistas em Medicina Dentária
+    - Medicina Interna # Médicos Especialistas em Medicina Interna
+    - Neurologia # Médicos Especialistas em Neurologia
+    - Oftalmologia # Médicos Especialistas em Oftalmologia
+    - Ortopedia # Médicos Especialistas em Ortopedia
+    - Otorrinolaringologia # Médicos Especialistas em Otorrinolaringologia
+    - Pediatria # Médicos Especialistas em Pediatria
+    - Pneumologia e Alergologia Respiratória, Pneumologia, Alergologia # Médicos Especialistas em Pneumologia e Alergologia Respiratória
+    - Psicologia # Médicos Especialistas em Psicologia
+    - Psiquiatria # Médicos Especialistas em Psiquiatria
+    - Reumatologia # Médicos Especialistas em Reumatologia
+    - Urologia # Médicos Especialistas em Urologia
+
+    # Outro tipo de consultas:
+        - Nutrição,  Nutricionista # Nutricionista
+        - Podologia # Podologista
+        - Terapia da Fala # Terapeuta da Fala
+
+# Exames e análies:
+    - Análises Clínicas
+    - Imagiologia/Radiologia
+    - Gastrenterologia
+    - Cardiologia
+
+# Serviços Disponíveis
+O hospital oferece uma variedade de serviços para melhor atender os pacientes:
+    - Consultas Externas
+    - Exames de Diagnóstico
+    - Cirurgias
+    - Unidade de Convalescença
+    - Imagiologia/Radiologia
+    - Análises Clínicas
+    - Fisioterapia
+    - Consulta Aberta 24h
+    - Vale Cirurgia SIGA/SIGIC
+
+# Consulta Aberta 24h
+	A Consulta Aberta 24h é um serviço médico disponível sem necessidade de marcação prévia, destinado à resolução de situações agudas que não requerem atendimento de urgência hospitalar.
+	É assegurada por uma equipa de profissionais que integra médicos de Clinica Geral e Medicina Interna, apoiados por uma equipa de enfermagem e técnicos especializados em Meios Complementares Diagnóstico e Terapêuticos. 
+	Funciona em REGIME PRIVADO nos dias úteis das 00h às 20h e das 00h às 08h em feriados e fins de semana. O preço de uma consulta é de 45€, e acresce também o valor dos tratamentos e medicação que possa ser utilizado.
+	Funciona em REGIME CONVENCIONADO COM O SNS nos dias úteis das 20h às 24h e das 08h às 24h em feriados e fins de semana. O utente paga apenas a medicação e tratamentos que possam ser utilizados.
+
+# Atestado médico para cartas de condução
+	No âmbito da consulta aberta em regime privado, pode também realizar exames médicos com o fim de atestar a robustez física e psíquica para o desempenho de determinadas atividades, bem como da capacidade do Utente para a condução de veículos motorizados/automóveis, com emissão dos respetivos atestados médicos.
+
+# Preços
+	Para mais informações sobre preços ou orçamentos, por favor contactar uma assistente.
+
+
+# Unidade de Convalescença
+	A Unidade de Convalescença do hospital possui 28 camas e está integrada na Rede Nacional de Cuidados Continuados Integrados (RNCCI), focando-se na reabilitação e reintegração dos pacientes.
+
+# Corpo Clínico
+	O hospital conta com uma equipa médica qualificada e dedicada em diversas especialidades.
+
+# Médicos Especialistas
+    - Médicos Especialistas de Angiologia e Cirurgia Vascular
+        - Dr Luis Vilaça
+        - Dr João Oliveira
+    - Médicos Especialistas de Cardiologia
+        - Dr.ª Adília Rebelo
+        - Dr. Sérgio Leite
+    - Médicos Especialistas de Cirurgia Geral
+        - Dr.ª Vírginia Soares
+        - Dr. Jorge Guimarães
+        - Prof.ª Dr.ª Sandra Martins
+    - Médicos Especialistas de Cirurgia Plástica, Reconstrutiva e Estética
+        - Dr. Rúben Coelho
+    - Médicos Especialistas de Dermatologia
+        - Dr. António Ferrete
+        - Dr. Álvaro Machado
+    - Médicos Especialistas de Endocrinologia
+        - Dr. Jorge Pedro
+    - Médicos Especialistas de Medicina Fisica e de Reabilitação
+        - Dr. Luis Rodrigues
+        - Dr. César Lima
+        - Dr. Rui Brito
+    - Médicos Especialistas de Gastrenterolgia
+        - Prof. Dr. José Cotter
+        - Dr. Bruno Rosa
+        - Dr.ª Ana Rebelo
+        - Dr. Paolo Ceccatelli
+        - Dr. Pedro Boal
+        - Dr.ª Francisca Castro
+        - Dr. Tiago Cúrdia Gonçalves
+        - Dr.ª Cláudia Macedo
+    - Médicos Especialistas em Ginecologia e Obstetrícia
+        - Dr. Gabriel Borges
+        - Dr.ª Fernanda Tavares
+        - Dr. António Almeida e Silva
+        - Dr.ª Manuela Mesquita
+    - Médicos Especialistas em Imunoalergologia
+        - Drª. Daniela Abreu
+    - Médicos Especialistas em Medicina Dentária
+        - Dr.ª Diana Machado
+        - Dr. João Fontes Pereira
+    - Médicos Especialistas em Medicina Interna
+        - Dr. Mário Almeida
+    - Médicos Especialistas em Neurologia
+        - 
+    - Médicos Especialistas em Oftalmologia
+        - Dr. Paulo Dias
+        - Dr.ª Paula Sepúlveda
+        - Dr. Luis Gonçalves
+        - Dr. Pedro Faria
+        - Dr.ª Joana Araújo
+        - Dr.ª Cristina Freitas
+        - Dr.ª Rita Gentil
+        - Dr. João Costa
+    - Médicos Especialistas em Ortopedia
+        - Dr. José Bessa da Silva
+        - Prof. Dr. Carlos Vilela
+        - Dr. Martins Pereira
+        - Dr. Fernando Coelho
+        - Dr. José Ferrero
+    - Médicos Especialistas em Otorrinolaringologia
+        - Dr.ª Berta Rodrigues
+        - Dr Ângelo Fernandes
+        - Dr.ª Sara Martins Pereira
+        - Dr.ª Catarina Lombo
+    - Médicos Especialistas em Pediatria
+        - Dr.ª Raquel Oliveira
+    - Médicos Especialistas em Pneumologia e Alergologia Respiratória
+        - Dr.ª Joana Lages
+    - Médicos Especialistas em Psicologia
+        - Dr.ª Márcia Mor
+        - Dr.ª Marta Marques
+    - Médicos Especialistas em Psiquiatria
+        - Dr. Nuno Rodrigues
+    - Médicos Especialistas em Reumatologia
+        - Drª. Francisca Guimarães
+    - Médicos Especialistas em Urologia
+        - Dr. Lemos de Sousa
+        - Dr. Jorge Cabral Ribeiro
+        - Dr. Pedro Passos
+
+    - Nutricionista, Nutrição
+        - Dr.ª Maria Clara
+        - Dr.ª Rafaela Ribeiro
+    - Terapeuta da Fala
+        - Dr.ª Ana Silva
+        - Dr.ª Maria João Azevedo
+    - Podologista
+        - Dr.ª Esperança Oliveira
+
+# Acordos e Protocolos
+    - Seguros de Saúde
+        - AdvanceCare
+        - Médis
+        - Multicare
+    - Susbsistemas de Saúde e Equiparados
+        - SNS - Serviço Nacional de Saúde
+        - ADSE
+        - SIGIC - SIGA SNS
+        - Serviços Sociais da CGD
+        - IASFA
+        - GNR
+        - PSP
+        - SAMS Quadros
+    - Seguradoras de Acidentes e Assistência em Viagem
+        - Acidentes de Trabalho
+            - Tranquilidade
+            - Generali Seguros
+            - AGEAS
+            - Caravela
+        - Acidentes Desportivos
+            - Trueclinic
+    - Empresas, Associações e Outras Entidades
+        - Cartões Saúde Sociais UMP
+
+# Contactos
+    - Geral: +351 300 525 525 (Chamada para rede fixa nacional)
+    - Marcação de Consultas: +351 253 639 035
+    - Fisioterapia: +351 253 639 051
+    - Pediatria: +351 300 525 528
+    - Unidade de Convalescença: +351 253 639 039
+    - Internamento Cirúrgico: +351 253 639 050
+    - Laboratório de Análises: +351 253 639 053
+    - Radiologia/Imagiologia: +351 253 639 034
+    - SIGIC: +351 300 525 525
+
+#Morada
+- Endereço: Rua da Misericórdia 141, Apartado 143, 4830-503 Póvoa de Lanhoso

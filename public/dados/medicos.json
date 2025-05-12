@@ -1,0 +1,246 @@
+[
+  {
+    "nome": "Dr Luis Vilaça",
+    "especialidade": "Angiologia e Cirurgia Vascular"
+  },
+  {
+    "nome": "Dr João Oliveira",
+    "especialidade": "Angiologia e Cirurgia Vascular"
+  },
+  {
+    "nome": "Dr.ª Adília Rebelo",
+    "especialidade": "Cardiologia"
+  },
+  {
+    "nome": "Dr. Sérgio Leite",
+    "especialidade": "Cardiologia"
+  },
+  {
+    "nome": "Dr.ª Vírginia Soares",
+    "especialidade": "Cirurgia Geral"
+  },
+  {
+    "nome": "Dr. Jorge Guimarães",
+    "especialidade": "Cirurgia Geral"
+  },
+  {
+    "nome": "Prof.ª Dr.ª Sandra Martins",
+    "especialidade": "Cirurgia Geral"
+  },
+  {
+    "nome": "Dr. Rúben Coelho",
+    "especialidade": "Cirurgia Plástica, Reconstrutiva e Estética"
+  },
+  {
+    "nome": "Dr. António Ferrete",
+    "especialidade": "Dermatologia"
+  },
+  {
+    "nome": "Dr. Álvaro Machado",
+    "especialidade": "Dermatologia"
+  },
+  {
+    "nome": "Dr. Jorge Pedro",
+    "especialidade": "Endocrinologia"
+  },
+  {
+    "nome": "Dr. Luis Rodrigues",
+    "especialidade": "Medicina Fisica e de Reabilitação"
+  },
+  {
+    "nome": "Dr. César Lima",
+    "especialidade": "Medicina Fisica e de Reabilitação"
+  },
+  {
+    "nome": "Dr. Rui Brito",
+    "especialidade": "Medicina Fisica e de Reabilitação"
+  },
+  {
+    "nome": "Prof. Dr. José Cotter",
+    "especialidade": "Gastrenterolgia"
+  },
+  {
+    "nome": "Dr. Bruno Rosa",
+    "especialidade": "Gastrenterolgia"
+  },
+  {
+    "nome": "Dr.ª Ana Rebelo",
+    "especialidade": "Gastrenterolgia"
+  },
+  {
+    "nome": "Dr. Paolo Ceccatelli",
+    "especialidade": "Gastrenterolgia"
+  },
+  {
+    "nome": "Dr. Pedro Boal",
+    "especialidade": "Gastrenterolgia"
+  },
+  {
+    "nome": "Dr.ª Francisca Castro",
+    "especialidade": "Gastrenterolgia"
+  },
+  {
+    "nome": "Dr. Tiago Cúrdia Gonçalves",
+    "especialidade": "Gastrenterolgia"
+  },
+  {
+    "nome": "Dr.ª Cláudia Macedo",
+    "especialidade": "Gastrenterolgia"
+  },
+  {
+    "nome": "Dr. Gabriel Borges",
+    "especialidade": "Ginecologia e Obstetrícia"
+  },
+  {
+    "nome": "Dr.ª Fernanda Tavares",
+    "especialidade": "Ginecologia e Obstetrícia"
+  },
+  {
+    "nome": "Dr. António Almeida e Silva",
+    "especialidade": "Ginecologia e Obstetrícia"
+  },
+  {
+    "nome": "Dr.ª Manuela Mesquita",
+    "especialidade": "Ginecologia e Obstetrícia"
+  },
+  {
+    "nome": "Drª. Daniela Abreu",
+    "especialidade": "Imunoalergologia"
+  },
+  {
+    "nome": "Dr.ª Diana Machado",
+    "especialidade": "Medicina Dentária"
+  },
+  {
+    "nome": "Dr. João Fontes Pereira",
+    "especialidade": "Medicina Dentária"
+  },
+  {
+    "nome": "Mário Almeida",
+    "especialidade": "Medicina Interna"
+  },
+  {
+    "nome": "Dr. Paulo Dias",
+    "especialidade": "Oftalmologia"
+  },
+  {
+    "nome": "Dr.ª Paula Sepúlveda",
+    "especialidade": "Oftalmologia"
+  },
+  {
+    "nome": "Dr. Luis Gonçalves",
+    "especialidade": "Oftalmologia"
+  },
+  {
+    "nome": "Dr. Pedro Faria",
+    "especialidade": "Oftalmologia"
+  },
+  {
+    "nome": "Dr.ª Joana Araújo",
+    "especialidade": "Oftalmologia"
+  },
+  {
+    "nome": "Dr.ª Cristina Freitas",
+    "especialidade": "Oftalmologia"
+  },
+  {
+    "nome": "Dr.ª Rita Gentil",
+    "especialidade": "Oftalmologia"
+  },
+  {
+    "nome": "Dr. João Costa",
+    "especialidade": "Oftalmologia"
+  },
+  {
+    "nome": "Dr. José Bessa da Silva",
+    "especialidade": "Ortopedia"
+  },
+  {
+    "nome": "Prof. Dr. Carlos Vilela",
+    "especialidade": "Ortopedia"
+  },
+  {
+    "nome": "Dr. Martins Pereira",
+    "especialidade": "Ortopedia"
+  },
+  {
+    "nome": "Dr. Fernando Coelho",
+    "especialidade": "Ortopedia"
+  },
+  {
+    "nome": "Dr. José Ferrero",
+    "especialidade": "Ortopedia"
+  },
+  {
+    "nome": "Dr.ª Berta Rodrigues",
+    "especialidade": "Otorrinolaringologia"
+  },
+  {
+    "nome": "Dr Ângelo Fernandes",
+    "especialidade": "Otorrinolaringologia"
+  },
+  {
+    "nome": "Dr.ª Sara Martins Pereira",
+    "especialidade": "Otorrinolaringologia"
+  },
+  {
+    "nome": "Dr.ª Catarina Lombo",
+    "especialidade": "Otorrinolaringologia"
+  },
+  {
+    "nome": "Dr.ª Raquel Oliveira",
+    "especialidade": "Pediatria"
+  },
+  {
+    "nome": "Dr.ª Joana Lages",
+    "especialidade": "Pneumologia e Alergologia Respiratória"
+  },
+  {
+    "nome": "Dr.ª Márcia Mor",
+    "especialidade": "Psicologia"
+  },
+  {
+    "nome": "Dr.ª Marta Marques",
+    "especialidade": "Psicologia"
+  },
+  {
+    "nome": "Dr. Nuno Rodrigues",
+    "especialidade": "Psiquiatria"
+  },
+  {
+    "nome": "Drª. Francisca Guimarães",
+    "especialidade": "Reumatologia"
+  },
+  {
+    "nome": "Dr. Lemos de Sousa",
+    "especialidade": "Urologia"
+  },
+  {
+    "nome": "Dr. Jorge Cabral Ribeiro",
+    "especialidade": "Urologia"
+  },
+  {
+    "nome": "Dr. Pedro Passos",
+    "especialidade": "Urologia"
+  },
+  {
+    "nome": "Dr.ª Maria Clara",
+    "especialidade": "Nutrição"
+  },
+  {
+    "nome": "Dr.ª Rafaela Ribeiro",
+    "especialidade": "Nutrição"
+  },
+  {
+    "nome": "Dr.ª Ana Silva",
+    "especialidade": "Terapia da Fala"
+  },
+  {
+    "nome": "Dr.ª Maria João Azevedo",
+    "especialidade": "Terapia da Fala"
+  },
+  {
+    "nome": "Dr.ª Esperança Oliveira",
+    "especialidade": "Podologia"
+  }
+]

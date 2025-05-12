@@ -1,0 +1,16 @@
+1. Verificação de dados introduzidos (contacto telefónico)
+
+2. Marcação de consultas por nome do médico
+
+3. Criação de uma base de dados para marcações
+
+4. Armazenamento de dados de utilização
+
+
+5. Integração com biblioteca de NLP no cliente
+.
+
+6. Aprendizagem a partir das interações
+
+
+7. Melhoria contínua da aprendizagem da IA via prompt e histórico

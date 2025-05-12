@@ -1,0 +1,11 @@
+Serviços Disponíveis
+    O hospital oferece uma variedade de serviços para melhor atender os pacientes:
+        - Consultas Externas
+        - Exames de Diagnóstico
+        - Cirurgias
+        - Unidade de Convalescença
+        - Imagiologia/Radiologia
+        - Análises Clínicas
+        - Fisioterapia
+        - Consulta Aberta 24h
+        - Vale Cirurgia SIGA/SIGIC

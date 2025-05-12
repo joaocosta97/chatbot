@@ -1,0 +1,70 @@
+# Exames e análies:
+    - Imagiologia/Radiologia:
+        - Ecografia
+        - Mamografia
+        - Ortopantomografia
+        - Radiologia de intervenção (Biópsia)
+        - Telerradiografia
+        - Biópsia da Tiróide
+        - Raio-X
+        - TAC
+    
+    - Gastrenterologia:
+        - Colonoscopia
+        - Endoscopia Digestiva Alta (EDA)
+        - Anuscopia
+        - Polipectomia
+        - Biópsia Transendocópica
+        - Retoscopia Rigida
+        - Retossigmoidoscopia Flexível
+
+    - Cardiologia:
+        - Eletrocardiograma (ECG)
+        - Prova de Esforço
+        - Ecocardiograma
+        - Holter
+        - MAPA
+    
+    - Angiologia e Cirurgia Vascular:
+        - Ecodoppler
+
+    - Otorrinolaringologia:
+        - Audiometria
+        - Timpanografia
+    
+    - Pneumologia e Alergologia Respiratória:
+        - Espirometria
+        - Polissonografia
+
+    - Medicina Fisica e de Reabilitação (Fisioterapia):
+        - Eletroterapia
+        - Fototerapia
+        - Termoterapia
+        - Pressoterapia
+        - Massagem terapêutica
+        - Massagem desportiva
+        - Drenagem Linfática
+        - Cinesioterapia
+        - Ventiloterapia
+        - Mecanoterapia
+        - Hidroterapia
+        - Pilates Clinico
+    
+
+#Marcações
+	Caso queira marcar um exame, pode fazê-lo ligando para o número +351 253 639 034.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

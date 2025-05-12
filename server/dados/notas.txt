@@ -1,0 +1,54 @@
+FUNCIONALIDADES:
+
+- Centrar "ELVIRA" (FEITO)
+
+- Dar a sensação que está a escrever (FEITO)
+
+- Fazer da barra de topo um botão para aumentar e diminuir.(FEITO)
+
+- Integrar com M1, para marcação de consultas, acesso a agendas de médicos e especialidades.
+        - Integrado com Googlesheets, para já: User marca a consulta, informações caem em folha de cálculo para contacto posterior (FEITO)
+
+        - Criar BD para clientes que queiram efetuar marcações.
+        - Contacto por parte do assistente, para confirmação de marcação.
+
+- Botão de chamada apenas para dispositivos móveis (FEITO)
+
+- Aprendizagem da IA para melhoria continua das respostas: Deteção de padrões, registo e analise de interações...
+
+
+
+ALTERAÇÕES A FAZER: 
+
+- Marcação automática só funciona se o user disser "quero marcar uma consulta". Aumentar as possibilidades para não causar parecer estupido.(FEITO mas agora sempre que algúem escrever a palavra consulta, marcar, gostava, etc, inicia a função da marcação de consulta...)
+
+- Na marcação de consulta, a resposta é muito rápida e dá a sensação de ser uma automatização. Aumentar o tempo das respostas, tipo 1s. (FEITO)
+
+- Pergunto pelo médico e diz que não tem registo, mas se perguntar quem são os médicos da especialidade responde corretamente... Resolver a aprendizagem e a linguagem. (FEITO)
+
+- Quando o user usa 2 serviços diferentes, o bot envia 2 numeros de contacto diferentes. Deve enviar só um e avisar que depois de tratar de um dos assuntos será reencaminhado para o 2º assunto.
+
+
+
+
+
+
+BUGS:
+
+
+
+
+
+
+
+PERGUNTAR PELO SISTEMA DE SAUDE
+
+
+
+
+
+
+
+
+
+

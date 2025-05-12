@@ -1,0 +1,90 @@
+Corpo Clínico
+O hospital conta com uma equipa médica qualificada e dedicada em diversas especialidades.
+
+# Médicos Especialistas
+    - Angiologia e Cirurgia Vascular
+        - Dr Luis Vilaça
+        - Dr João Oliveira
+    - Cardiologia
+        - Dr.ª Adília Rebelo
+        - Dr. Sérgio Leite
+    - Cirurgia Geral
+        - Dr.ª Vírginia Soares
+        - Dr. Jorge Guimarães
+        - Prof.ª Dr.ª Sandra Martins
+    - Cirurgia Plástica, Reconstrutiva e Estética
+        - Dr. Rúben Coelho
+    - Dermatologia
+        - Dr. António Ferrete
+        - Dr. Álvaro Machado
+    - Endocrinologia
+        - Dr. Jorge Pedro
+    - Medicina Fisica e de Reabilitação
+        - Dr. Luis Rodrigues
+        - Dr. César Lima
+        - Dr. Rui Brito
+    - Gastrenterolgia
+        - Prof. Dr. José Cotter
+        - Dr. Bruno Rosa
+        - Dr.ª Ana Rebelo
+        - Dr. Paolo Ceccatelli
+        - Dr. Pedro Boal
+        - Dr.ª Francisca Castro
+        - Dr. Tiago Cúrdia Gonçalves
+        - Dr.ª Cláudia Macedo
+    - Ginecologia e Obstetrícia
+        - Dr. Gabriel Borges
+        - Dr.ª Fernanda Tavares
+        - Dr. António Almeida e Silva
+        - Dr.ª Manuela Mesquita
+    - Imunoalergologia
+        - Drª. Daniela Abreu
+    - Medicina Dentária
+        - Dr.ª Diana Machado
+        - Dr. João Fontes Pereira
+    - Medicina Interna
+        - Dr. Mário Almeida
+    - Oftalmologia
+        - Dr. Paulo Dias
+        - Dr.ª Paula Sepúlveda
+        - Dr. Luis Gonçalves
+        - Dr. Pedro Faria
+        - Dr.ª Joana Araújo
+        - Dr.ª Cristina Freitas
+        - Dr.ª Rita Gentil
+        - Dr. João Costa
+    - Ortopedia
+        - Dr. José Bessa da Silva
+        - Prof. Dr. Carlos Vilela
+        - Dr. Martins Pereira
+        - Dr. Fernando Coelho
+        - Dr. José Ferrero
+    - Otorrinolaringologia
+        - Dr.ª Berta Rodrigues
+        - Dr Ângelo Fernandes
+        - Dr.ª Sara Martins Pereira
+        - Dr.ª Catarina Lombo
+    - Pediatria
+        - Dr.ª Raquel Oliveira
+    - Pneumologia e Alergologia Respiratória
+        - Dr.ª Joana Lages
+    - Psicologia
+        - Dr.ª Márcia Mor
+        - Dr.ª Marta Marques
+    - Psiquiatria
+        - Dr. Nuno Rodrigues
+    - Reumatologia
+        - Drª. Francisca Guimarães
+    - Urologia
+        - Dr. Lemos de Sousa
+        - Dr. Jorge Cabral Ribeiro
+        - Dr. Pedro Passos
+
+ - Nutricionista, Nutrição
+        - Dr.ª Maria Clara
+        - Dr.ª Rafaela Ribeiro
+    - Terapeuta da Fala
+        - Dr.ª Ana Silva
+        - Dr.ª Maria João Azevedo
+    - Podologista
+        - Dr.ª Esperança Oliveira

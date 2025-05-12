@@ -1,0 +1,30 @@
+# Especialidades Médicas, consulta, consultas, marcação de consultas
+
+O hospital António Lopes  disponibiliza diversas especialidades médicas, incluindo:
+    - Angiologia e Cirurgia Vascular 
+    - Cardiologia 
+    - Cirurgia Geral 
+    - Cirurgia Plástica, Reconstrutiva e Estética 
+    - Dermatologia 
+    - Endocrinologia
+    - Fisiatria, Fisiatra, Fisioterapia, Medicina Física e de Reabilitação
+    - Gastrenterologia 
+    - Ginecologia e Obstetrícia
+    - Imunoalergologia
+    - Medicina Dentária
+    - Medicina Interna
+    - Neurologia
+    - Oftalmologia
+    - Ortopedia
+    - Otorrinolaringologia
+    - Pediatria
+    - Pneumologia e Alergologia Respiratória, Pneumologia, Alergologia
+    - Psicologia
+    - Psiquiatria
+    - Reumatologia
+    - Urologia
+
+    # Outro tipo de consultas:
+        - Nutrição,  Nutricionista
+        - Podologia
+        - Terapia da Fala

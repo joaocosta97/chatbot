@@ -1,0 +1,590 @@
+<!--<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot Elvira</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+    }
+    #chat-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 350px;
+      max-height: 500px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background: #fff;
+      z-index: 9999;
+    }
+    #chat-header {
+      background: #25D366;
+      color: white;
+      padding: 12px;
+      font-weight: bold;
+    }
+    #chat-messages {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      background: #f0f0f0;
+    }
+    .message {
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 12px;
+      max-width: 80%;
+    }
+    .bot { background: #e1f5fe; align-self: flex-start; }
+    .user { background: #dcf8c6; align-self: flex-end; }
+    #chat-input {
+      display: flex;
+      border-top: 1px solid #ccc;
+    }
+    #chat-input input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+    }
+    #chat-input button {
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="chat-container">
+    <div id="chat-header">Assistente Elvira</div>
+    <div id="chat-messages">
+      <div class="message bot">Olá! Sou a Elvira, assistente virtual do Hospital António Lopes. Em que posso ajudar?</div>
+    </div>
+    <div id="chat-input">
+      <input type="text" id="user-input" placeholder="Digite sua mensagem..." />
+      <button onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const input = document.getElementById('user-input');
+      const text = input.value.trim();
+      if (!text) return;
+
+      const userMsg = document.createElement('div');
+      userMsg.className = 'message user';
+      userMsg.textContent = text;
+      document.getElementById('chat-messages').appendChild(userMsg);
+
+      input.value = '';
+
+      const botMsg = document.createElement('div');
+      botMsg.className = 'message bot';
+      botMsg.textContent = '...';
+      document.getElementById('chat-messages').appendChild(botMsg);
+
+      try {
+        const res = await fetch('http://localhost:3000/mensagem', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ mensagem: text })
+        });
+        const data = await res.json();
+        botMsg.textContent = data.resposta || 'Desculpe, não compreendi.';
+      } catch (e) {
+        botMsg.textContent = 'Erro ao contactar o servidor.';
+      }
+
+      const chatMessages = document.getElementById('chat-messages');
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+  </script>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Elvira - HAL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+    }
+    #chatbot-toggle {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #26a7b5;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 12px 20px;
+      font-size: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      cursor: pointer;
+      transition: background-color 0.3s;
+      z-index: 1000;
+    }
+    #chatbot-toggle:hover {
+      background-color: #26a7b5;
+    }
+    #chatbot-box {
+      position: fixed;
+      bottom: 80px;
+      right: 24px;
+      width: 380px;
+      height: 520px;
+      display: none;
+      flex-direction: column;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      overflow: hidden;
+      z-index: 999;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+   #chatbot-header {
+      background-color: #26a7b5;
+      color: white;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    #chatbot-header .left {
+      position: absolute;
+      left: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    #chatbot-header img {
+      height: 36px;
+    }
+
+    #chatbot-header .title {
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    #minimize-button {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #chatbot-messages {
+      flex: 1;
+      padding: 16px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #f0f2f5;
+      scroll-behavior: smooth;
+    }
+
+    .message {
+      padding: 10px 14px;
+      border-radius: 16px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-width: 80%;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      animation: slideUp 0.3s ease;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .bot {
+      background: #e6f7ff;
+      align-self: flex-start;
+      color: #003d5c;
+    }
+
+    .user {
+      background: #dcf8c6;
+      align-self: flex-end;
+      color: #1c1c1c;
+    }
+
+    .typing {
+      position: relative;
+      font-style: italic;
+      color: #666;
+    }
+    .typing::after {
+      content: '.';
+      animation: dots 1s steps(3, end) infinite;
+      position: absolute;
+      margin-left: 5px;
+    }
+    @keyframes dots {
+      0% { content: '.'; }
+      33% { content: '..'; }
+      66% { content: '...'; }
+      100% { content: '.'; }
+    }
+
+    #chatbot-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+      padding: 10px;
+      background: white;
+    }
+
+    #chatbot-input input {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 10px 14px;
+      border-radius: 25px;
+      font-size: 14px;
+      outline: none;
+      background-color: #fff;
+      transition: all 0.2s ease;
+    }
+
+    #chatbot-input input:focus {
+      border-color: #26a7b5;
+    }
+
+    #chatbot-input button {
+      background: #26a7b5;
+      border: none;
+      color: white;
+      margin-left: 10px;
+      padding: 10px 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #chatbot-input button:hover {
+      background-color: #26a7b5;
+    }
+
+    @media (max-width: 600px) {
+      #chatbot-box {
+        width: 95%;
+        right: 2.5%;
+        bottom: 90px;
+        height: 90vh;
+      }
+    }
+
+    .call-button {
+      display: none; /* Oculto por padrão */
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 10px;
+      max-width: 200px;
+    }
+
+    /* Só mostra o botão se for mobile */
+    @media (max-width: 768px) {
+      .call-button {
+        display: inline-block;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <button id="chatbot-toggle">💬 Converse com a Elvira</button>
+  <div id="chatbot-box">
+    <div id="chatbot-header">
+      <div class="left">
+        <img src="./LOGO_HAL.svg" alt="Logo HAL">
+      </div>
+      <div class="title">Elvira</div>
+      <button id="minimize-button">−</button>
+    </div>
+    <div id="chatbot-messages">
+      <div class="message bot">Olá! Sou a Elvira, assistente virtual do Hospital António Lopes. Em que posso ajudar?</div>
+    </div>
+    <div id="chatbot-input">
+      <input type="text" id="user-input" placeholder="Escreva aqui...">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+<script>
+  const toggle = document.getElementById('chatbot-toggle');
+  const box = document.getElementById('chatbot-box');
+  const minimize = document.getElementById('minimize-button');
+  const messages = document.getElementById('chatbot-messages');
+  const input = document.getElementById('user-input');
+
+  let historico = [];
+  let etapaMarcacao = null;
+  let dadosMarcacao = {};
+  let listaMedicos = [];
+
+  const especialidadesValidas = [
+    'angiologia e cirurgia vascular', 'cardiologia', 'cirurgia geral', 'cirurgia plástica, reconstrutiva e estética',
+    'dermatologia', 'endocrinologia', 'medicina física e de reabilitação', 'fisiatria', 'fisioterapia',
+    'gastrenterologia', 'ginecologia e obstetrícia', 'imunoalergologia', 'medicina dentária', 'medicina interna',
+    'oftalmologia', 'ortopedia', 'otorrinolaringologia', 'pediatria', 'pneumologia', 'alergologia respiratória',
+    'psicologia', 'psiquiatria', 'reumatologia', 'urologia', 'nutrição', 'podologia', 'terapia da fala'
+  ];
+
+  // Carregar médicos via fetch
+  fetch('dados/medicos.json')
+    .then(res => res.json())
+    .then(data => listaMedicos = data)
+    .catch(err => console.error('Erro ao carregar médicos:', err));
+
+  toggle.addEventListener('click', () => {
+    box.style.display = 'flex';
+    box.style.flexDirection = 'column';
+    toggle.style.display = 'none';
+    setTimeout(() => messages.scrollTop = messages.scrollHeight, 100);
+  });
+
+  minimize.addEventListener('click', () => {
+    box.style.display = 'none';
+    toggle.style.display = 'inline-block';
+  });
+
+  document.getElementById('chatbot-header').addEventListener('click', (e) => {
+    if (e.target.id !== 'minimize-button') {
+      box.style.display = 'none';
+      toggle.style.display = 'inline-block';
+    }
+  });
+
+  input.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      sendMessage();
+    }
+  });
+
+  async function sendMessage() {
+    const text = input.value.trim();
+    if (!text) return;
+
+    const userMsg = document.createElement('div');
+    userMsg.className = 'message user';
+    userMsg.textContent = text;
+    messages.appendChild(userMsg);
+
+    historico.push({ role: 'user', content: text });
+    input.value = '';
+
+    const botMsg = document.createElement('div');
+    botMsg.className = 'message bot typing';
+    botMsg.textContent = 'A escrever';
+    messages.appendChild(botMsg);
+    messages.scrollTop = messages.scrollHeight;
+
+    // Marcação por nome de médico
+    if (!etapaMarcacao) {
+      const medicoEncontrado = listaMedicos.find(med =>
+        text.toLowerCase().includes(med.nome.toLowerCase())
+      );
+      if (medicoEncontrado) {
+        dadosMarcacao.especialidade = medicoEncontrado.especialidade;
+        etapaMarcacao = 'nome';
+        setTimeout(() => {
+          botMsg.textContent = `Consulta com ${medicoEncontrado.nome} (${medicoEncontrado.especialidade})? Muito bem. Pode indicar o seu nome completo?`;
+          botMsg.classList.remove('typing');
+        }, 1000);
+        return;
+      }
+    }
+
+    // Marcação por especialidade
+    if (/(quero|gostava|preciso|gostaria|queria).*(marcar|agendar).*consulta/i.test(text) && !etapaMarcacao) {
+      const match = text.match(/consulta (de|da|do)?\s?([a-zçãêéíôõáú ]+)/i);
+      if (match && match[2]) {
+        const especialidadeUser = match[2].trim().toLowerCase();
+        const especialidadeValida = especialidadesValidas.find(espec =>
+          especialidadeUser.includes(espec)
+        );
+
+        if (especialidadeValida) {
+          dadosMarcacao.especialidade = especialidadeValida;
+          etapaMarcacao = 'nome';
+          setTimeout(() => {
+            botMsg.textContent = `Consulta de ${especialidadeValida}? Perfeito. Pode indicar o seu nome completo?`;
+            botMsg.classList.remove('typing');
+          }, 1000);
+        } else {
+          etapaMarcacao = null;
+          setTimeout(() => {
+            botMsg.textContent = 'Peço desculpa, mas o Hospital não possui essa especialidade. Deseja marcar uma consulta de outra especialidade?';
+            botMsg.classList.remove('typing');
+          }, 1000);
+        }
+      } else {
+        etapaMarcacao = 'especialidade';
+        setTimeout(() => {
+          botMsg.textContent = 'Claro! Qual a especialidade que deseja marcar?';
+          botMsg.classList.remove('typing');
+        }, 1000);
+      }
+      return;
+    }
+
+    if (etapaMarcacao === 'especialidade') {
+      dadosMarcacao.especialidade = text;
+      etapaMarcacao = 'nome';
+      setTimeout(() => {
+        botMsg.textContent = 'Ótimo! Pode indicar o seu nome completo?';
+        botMsg.classList.remove('typing');
+      }, 1000);
+      return;
+    }
+
+    if (etapaMarcacao === 'nome') {
+      dadosMarcacao.nome = text;
+      etapaMarcacao = 'nascimento';
+      setTimeout(() => {
+        botMsg.textContent = 'Perfeito! Pode indicar a sua data de nascimento? (DD/MM/AAAA)';
+        botMsg.classList.remove('typing');
+      }, 1000);
+      return;
+    }
+
+    if (etapaMarcacao === 'nascimento') {
+      dadosMarcacao.nascimento = text;
+      etapaMarcacao = 'contacto';
+      setTimeout(() => {
+        botMsg.textContent = 'Muito bem! Por fim, pode indicar o seu contacto telefónico?';
+        botMsg.classList.remove('typing');
+      }, 1000);
+      return;
+    }
+
+    if (etapaMarcacao === 'contacto') {
+      const numeroLimpo = text.replace(/\D/g, '');
+      if (numeroLimpo.length < 9 || numeroLimpo.length > 15) {
+        botMsg.textContent = 'O número que indicou não é válido. Pode verificar e tentar novamente? Deve conter entre 9 e 15 dígitos.';
+        botMsg.classList.remove('typing');
+        return;
+      }
+
+      dadosMarcacao.contacto = text;
+      etapaMarcacao = null;
+
+      try {
+        const res = await fetch('/marcacao', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(dadosMarcacao)
+        });
+
+        if (res.ok) {
+          setTimeout(() => {
+            botMsg.textContent = 'Obrigado! Será contactado para confirmar a sua marcação.';
+            botMsg.classList.remove('typing');
+          }, 1000);
+        } else {
+          setTimeout(() => {
+            botMsg.textContent = 'Ocorreu um erro ao guardar a sua marcação.';
+            botMsg.classList.remove('typing');
+          }, 1000);
+        }
+      } catch (err) {
+        botMsg.textContent = 'Erro ao contactar o servidor.';
+        botMsg.classList.remove('typing');
+      }
+
+      dadosMarcacao = {};
+      return;
+    }
+
+    // Falar com assistente
+    if (text.toLowerCase().includes('falar com um assistente')) {
+      botMsg.remove();
+      sendCallButton();
+      historico.push({ role: 'assistant', content: 'Encaminhar para assistente' });
+      return;
+    }
+
+    // Requisição normal ao chatbot
+    try {
+      const res = await fetch('/mensagem', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ mensagem: text, historico })
+      });
+
+      const data = await res.json();
+
+      setTimeout(() => {
+        botMsg.classList.remove('typing');
+        botMsg.textContent = data.resposta || 'Desculpe, não consegui compreender.';
+        historico.push({ role: 'assistant', content: botMsg.textContent });
+        messages.scrollTop = messages.scrollHeight;
+      }, 1000);
+    } catch (err) {
+      botMsg.textContent = 'Erro ao contactar o servidor.';
+      botMsg.classList.remove('typing');
+    }
+  }
+
+  function sendCallButton() {
+    const botMsg = document.createElement('div');
+    botMsg.className = 'message bot';
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      const callLink = document.createElement('a');
+      callLink.href = 'tel:+351253639035';
+      callLink.className = 'call-button';
+      callLink.textContent = '📞 Ligar agora';
+      botMsg.innerHTML = 'Claro, pode ligar diretamente para a nossa equipa de atendimento:<br>';
+      botMsg.appendChild(callLink);
+    } else {
+      botMsg.textContent = 'Apenas conseguimos reencaminhar a chamada se estiver a utilizar um telemóvel. Caso pretenda falar com um assistente, ligue 300 525 525.';
+    }
+
+    messages.appendChild(botMsg);
+    messages.scrollTop = messages.scrollHeight;
+  }
+</script>  
+  
+</body>
+</html>

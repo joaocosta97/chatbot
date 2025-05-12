@@ -1,0 +1,28 @@
+# Acordos e Protocolos
+ 
+    - Seguros de Saúde
+        - AdvanceCare
+        - Médis
+        - Multicare
+        
+    - Susbsistemas de Saúde e Equiparados
+        - SNS - Serviço Nacional de Saúde
+        - ADSE
+        - SIGIC - SIGA SNS
+        - Serviços Sociais da CGD
+        - IASFA
+        - GNR
+        - PSP
+        - SAMS Quadros
+
+    - Seguradoras de Acidentes e Assistência em Viagem
+        - Acidentes de Trabalho
+            - Tranquilidade
+            - Generali Seguros
+            - AGEAS
+            - Caravela
+        - Acidentes Desportivos
+            - Trueclinic
+
+    - Empresas, Associações e Outras Entidades
+        - Cartões Saúde Sociais União de Misericórdias Portuguesas (UMP)
