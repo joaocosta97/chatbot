@@ -509,7 +509,7 @@
       etapaMarcacao = null;
 
       try {
-        const res = await fetch('/marcacao', {
+          const res = await fetch('https://chatbot-elvira.onrender.com/mensagem', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(dadosMarcacao)
@@ -545,7 +545,7 @@
 
     // Requisição normal ao chatbot
     try {
-      const res = await fetch('/mensagem', {
+      const res = await fetch('https://chatbot-elvira.onrender.com/marcacao', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ mensagem: text, historico })
